@@ -50,7 +50,8 @@ if os.path.exists(landing_path):
     print("Created index.html from landing.html")
 
 print("\nDeployment preparation complete.")
-print("To deploy to Firebase:")
-print("1. Run 'firebase login'")
-print("2. Run 'firebase init' (select Hosting, use existing 'public' folder)")
-print("3. Run 'firebase deploy'")
+print("To deploy to Render:")
+print("1. Push this code to GitHub")
+print("2. Create a new Static Site on Render")
+print("3. Connect your GitHub repository")
+print("4. Set the Publish Directory to 'public' (if using this script) or root if deploying directly")

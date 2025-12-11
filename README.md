@@ -68,21 +68,18 @@
     *   This will generate a detailed comprehensive plot image (`policy_impact_analysis.png`) and print a statistical report to the console.
 
 ## 🌐 Deployment
-
-The project is set up for **Firebase Hosting**.
-
-1.  **Prepare files**:
-    Run the preparation script to organize files into a `public/` directory:
-    ```bash
-    python prepare_deploy.py
-    ```
-
-2.  **Deploy**:
-    ```bash
-    firebase login
-    firebase init  # Select 'Hosting', choose 'public' as directory
-    firebase deploy
-    ```
+ 
+ The project is ready for deployment on **Render**.
+ 
+ 1.  **Push to GitHub**:
+     Ensure your latest changes including `prepare_deploy.py` output or the root files are on GitHub.
+ 
+ 2.  **Deploy on Render**:
+     *   Go to [Render Dashboard](https://dashboard.render.com/).
+     *   Click **New +** -> **Static Site**.
+     *   Connect your GitHub repository.
+     *   **Build Command**: `python prepare_deploy.py` (optional, if you want to regenerate public folder) or leave empty.
+     *   **Publish Directory**: `public` (if using the script) or `.` (if serving root).
 
 ## 📊 Data Source
 The dashboard utilizes `combined_delhi_aqi_from_graphs1.csv`, which contains historical and aggregated air quality data for the Delhi-NCR region, structured for policy correlation analysis.
