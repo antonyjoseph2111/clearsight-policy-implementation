@@ -25,6 +25,7 @@ files_to_copy = [
     'dashboard_data.js',
     'dashboard_interactions.js',
     'policies_script.js',
+    'policy_impact_analysis.png',
     'combined_delhi_aqi_from_graphs1.csv',
     'landing.html',
     'login.html',
